@@ -218,6 +218,34 @@ Get this from the settings area when logged into <a href="http://particle.io/bui
 <input type="button" value="digitalWrite(d7,0);" onClick="{
     sendToParticle('digitalWrite(d7,0);')
 }"><br><br>
+   <input type="button" value="digitalWrite(d6,0);" onClick="{
+    sendToParticle('digitalWrite(d6,0);')
+}">
+   
+   <input type="button" value="digitalWrite(d6,1);" onClick="{
+    sendToParticle('digitalWrite(d6,1);')
+}">
+
+   <input type="button" value="digitalWrite(d5,0);" onClick="{
+    sendToParticle('digitalWrite(d5,0);')
+}">   
+   
+   <input type="button" value="digitalWrite(d5,1);" onClick="{
+    sendToParticle('digitalWrite(d5,1);')
+}">
+   
+   <br>
+   <input type="button" value="digitalWrite(d5,0) digitalWrite(d6,1);" onClick="{
+    sendToParticle('digitalWrite(d5,0);')
+  sendToParticle('digitalWrite(d6,1);')
+}">
+   
+ 
+   <input type="button" value="digitalWrite(d5,1) digitalWrite(d6,0);" onClick="{
+     sendToParticle('digitalWrite(d6,0);')
+    sendToParticle('digitalWrite(d5,1);')
+}">  
+   <br><br>
 
 Note that Advanced users can also use the pin numbers, so D7 = pin 7 on Photon but D7 = GPIO 19 on the Raspberry PI<br><br>   
    
@@ -236,8 +264,12 @@ Note that Advanced users can also use the pin numbers, so D7 = pin 7 on Photon b
    
    
 <input type="button" value="digitalRead(D6);" onClick="{
-    sendToParticle('digitalRead(D6);')
-}"><br><br>
+    sendToParticle('digitalRead(D6);'
+}">
+   <input type="button" value="digitalRead(D4);" onClick="{
+    sendToParticle('digitalRead(D4);')
+}">
+   <br><br>
   <input type="button" value="analogRead(A5);" onClick="{
     sendToParticle('analogRead(A5);')
 }"> 
