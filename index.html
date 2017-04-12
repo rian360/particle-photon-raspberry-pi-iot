@@ -233,7 +233,12 @@ Get this from the settings area when logged into <a href="http://particle.io/bui
    <input type="button" value="digitalWrite(d5,1);" onClick="{
     sendToParticle('digitalWrite(d5,1);')
 }">
-   
+   <input type="button" value="digitalWrite(d1,1);" onClick="{
+    sendToParticle('digitalWrite(d1,1);')
+}">
+   <input type="button" value="digitalWrite(d1,0);" onClick="{
+    sendToParticle('digitalWrite(d1,0);')
+}">
    <br>
    <input type="button" value="digitalWrite(d5,0) digitalWrite(d6,1);" onClick="{
     sendToParticle('digitalWrite(d5,0);')
@@ -268,6 +273,9 @@ Note that Advanced users can also use the pin numbers, so D7 = pin 7 on Photon b
 }">
    <input type="button" value="digitalRead(D4);" onClick="{
     sendToParticle('digitalRead(D4);')
+}">
+   <input type="button" value="digitalRead(D1);" onClick="{
+    sendToParticle('digitalRead(D1);')
 }">
    <br><br>
   <input type="button" value="analogRead(A5);" onClick="{
